@@ -48,10 +48,14 @@ It can be invoked with arguments directly:
 
 * `=RSUDIST(16, "1/1/2020")`
 
+![RSUDIST with values](images/rsudist-invocation-by-value.jpg)
+
 Alternatively, you could put `16` in a cell side-by-side `1/1/2020`
 and you can pass in references to those cells:
 
-* `=RSUDIST(A1:A2)`
+* `=RSUDIST(A1:B1)`
+
+![RSUDIST with references](images/rsudist-invocation-by-reference.jpg)
 
 If you're in the fortunate situation where you have two grants, you
 could put a grant in each row (like above) and then pass in references
@@ -60,6 +64,8 @@ results, and if vest dates overlap the RSUs vested will be added
 together:
 
 * `=RSUDIST(A1:B2)`
+
+![RSUDIST with two grants](images/rsudist-two-grants.jpg)
 
 ## Assumptions and a Warning
 

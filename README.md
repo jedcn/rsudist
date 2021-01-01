@@ -10,8 +10,36 @@ To use `=RSUDIST()` you provide information about an equity grant:
 * How many RSUs were granted?
 * When do these RSUs begin to vest?
 
-And with this `=RSUDIST` will generate a distribution schedule
+And with this info `=RSUDIST` will generate a distribution schedule
 indicating future distribution (vesting) events.
+
+## Why use `RSUDIST`?
+
+Generally speaking, it can *only help* to better understand any equity
+that is due to you.
+
+Specifically, Google Sheets can be a good mechanism for exploring how
+changes to a stock's price will impact you.
+
+I couldn't find a way to export distribution schedule information from
+a site like fidelity.com and I am only a novice Google Sheets
+user. However, `RSUDIST` made reasoning about equity easier and more
+accessible.
+
+Whether you use `RSUDIST` or not, I suggest you do some form of
+planning in this regard.
+
+## Why share `RSUDIST`?
+
+I have had several conversations around equity with people and wished
+for something that is illustrative in the way that `RSUDIST` can be
+inside of a Google Sheet.
+
+I have known people that have disregarded compensation via equity
+because they did not understand it, and I do not want anyone to make
+that mistake if I can help it.
+
+It was helpful to me, and I hope it can be helpful to you.
 
 ## Assumptions
 

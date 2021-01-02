@@ -1,7 +1,5 @@
 # rsudist
 
-## Overview
-
 This is the home of [some JavaScript][Code.js] that provides a [Custom
 Function] for [Google Sheets] named `=RSUDIST`.
 
@@ -10,8 +8,8 @@ You provide information to `=RSUDIST()` about an equity grant:
 * How many RSUs were granted?
 * When do these RSUs begin to vest?
 
-And it generates a schedule indicating distribution (vesting) events
-for that equity.
+And it generates a schedule indicating distribution events for that
+equity.
 
 ## Why might you use `=RSUDIST`?
 
@@ -23,16 +21,19 @@ been granted to you.
 And Google Sheets is a good mechanism for exploring how vesting equity
 and changing stock prices can impact you.
 
-## Why would I share `=RSUDIST`?
+## Why would I create/share `=RSUDIST`?
 
-I have had conversations about equity with people and wished for
+When thinking through my own equity situation, I have wished for
 something that is illustrative of possible outcomes in the way that
-`=RSUDIST` is. If you are getting your first grant it can be somewhat
-confusing.
+`=RSUDIST` is.
 
-I have known people that have disregarded compensation from equity
-because they did not understand it, and I do not want anyone to make
-that mistake if I can help it.
+It was helpful to me, and whether you have been dealing with equity
+for years or are just getting started, I think it can be helpful to
+you.
+
+Lastly, I have known people that have *entirely disregarded*
+compensation from equity because they did not understand it, and I do
+not want anyone to make that mistake if I can help it.
 
 ## How do you "get" `=RSUDIST`?
 
@@ -67,12 +68,13 @@ dates overlap the RSUs vested will be added together.
 
 ## Assumptions, Limitations, and a Warning
 
-* `=RSUDIST` assumes a quarterly vesting schedule over 4 years.
-* `=RSUDIST` (presently) does not model a year long cliff in any grant.
-
-**Warning: `=RSUDIST` was created quickly during a vacation with
-limited input, and I'm not convinced that it produces accurate
-results.**
+* **Assumption**: `=RSUDIST` assumes a quarterly vesting schedule over
+  4 years.
+* **Limitation** `=RSUDIST` does not presently model a year long cliff
+  in any grant.
+* **Warning: `=RSUDIST` was created quickly during a vacation with
+  limited input, and I am not convinced that it produces accurate
+  results.**
 
 It could be valuable to you if you want to get a rough idea of how an
 equity situation will change over time inside of a Google Sheet.
@@ -110,7 +112,7 @@ Sheet Add-on, first.
 I think `=RSUDIST` can be useful and I'd ask that you please [create an
 issue] if you see a problem.
 
-Be well. Happy New Year.
+Be informed. Be well. Happy New Year.
 
 [Code.js]: src/Code.js
 [Google Sheets]: https://www.google.com/sheets/about/

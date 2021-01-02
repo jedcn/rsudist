@@ -2,45 +2,49 @@
 
 ## Overview
 
-This is the home of some JavaScript that provides a [Custom Function]
-for [Google Sheets] named `=RSUDIST`.
+This is the home of [some JavaScript][Code.js] that provides a [Custom
+Function] for [Google Sheets] named `=RSUDIST`.
 
-To use `=RSUDIST()` you provide information about an equity grant:
+`=RSUDIST()` takes information that you provide information about an
+equity grant:
 
 * How many RSUs were granted?
 * When do these RSUs begin to vest?
 
-And with this info `=RSUDIST` will generate a distribution schedule
-indicating future distribution (vesting) events.
+And generates a distribution schedule indicating future distribution
+(vesting) events within a Google Sheet.
 
-## Why use `=RSUDIST`?
+## Why might you use `=RSUDIST`?
 
-Generally speaking, it can *only help* to better understand any equity
-that is due to you.
+`=RSUDIST` makes reasoning about equity easier and more accessible.
 
-Specifically, Google Sheets can be a good mechanism for exploring how
-changes to a stock's price will impact you.
+You can *only benefit* from better understanding any equity that has
+been granted to you.
 
-I couldn't find a way to export distribution schedule information from
-a site like fidelity.com and I could not figure out how to model a
-distribution schedule using my limited formula knowledge in Google
-Sheets. However, `=RSUDIST` made reasoning about equity easier and
-more accessible.
+And Google Sheets is a good mechanism for exploring how vesting equity
+and changing stock prices can impact you.
 
-Whether you use `=RSUDIST` or not, I suggest you do some form of
-planning in this regard.
+## Why would I share `=RSUDIST`?
 
-## Why share `=RSUDIST`?
+I have had several conversations about equity with people and wished
+for something that is illustrative of outcomes in the way that
+`=RSUDIST` can be inside of a Google Sheet. If you are getting your
+first grant it can be somewhat confusing.
 
-I have had several conversations around equity with people and wished
-for something that is illustrative in the way that `=RSUDIST` can be
-inside of a Google Sheet.
+Additionally, I have known people that have disregarded compensation
+via equity because they did not understand it, and I do not want
+anyone to make that mistake if I can help it.
 
-I have known people that have disregarded compensation via equity
-because they did not understand it, and I do not want anyone to make
-that mistake if I can help it.
+## How do you "get" `=RSUDIST`?
 
-It was helpful to me, and I hope it can be helpful to you.
+1. Create a new Google Sheet
+2. Navigate to Tools > Script Editor (a new window will open)
+3. Replace the default Script Editor content of `function myFunction {
+   }` with the content of [this file][Code.js].
+4. Save your changes in the Script Editor
+5. Navigate back to your Google Sheet
+6. See below for three ways to verify that `=RSUDIST())`is working as
+   expected.
 
 ## How to use `=RSUDIST`?
 
@@ -93,6 +97,7 @@ In this regard, please pay particular attention to the part of the
 I think `=RSUDIST` can be useful and I'd ask that you please [create an
 issue] if you see a problem.
 
+[Code.js]: src/Code.js
 [Google Sheets]: https://www.google.com/sheets/about/
 [Custom Function]: https://developers.google.com/apps-script/guides/sheets/functions
 [LICENSE]: ./LICENSE

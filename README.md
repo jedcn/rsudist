@@ -5,8 +5,7 @@
 This is the home of [some JavaScript][Code.js] that provides a [Custom
 Function] for [Google Sheets] named `=RSUDIST`.
 
-`=RSUDIST()` takes information that you provide information about an
-equity grant:
+`=RSUDIST()` takes information that you provide about an equity grant:
 
 * How many RSUs were granted?
 * When do these RSUs begin to vest?
@@ -26,13 +25,13 @@ and changing stock prices can impact you.
 
 ## Why would I share `=RSUDIST`?
 
-I have had several conversations about equity with people and wished
-for something that is illustrative of outcomes in the way that
+I have had conversations about equity with people and wished for
+something that is illustrative of possible outcomes in the way that
 `=RSUDIST` can be inside of a Google Sheet. If you are getting your
 first grant it can be somewhat confusing.
 
 Additionally, I have known people that have disregarded compensation
-via equity because they did not understand it, and I do not want
+from equity because they did not understand it, and I do not want
 anyone to make that mistake if I can help it.
 
 ## How do you "get" `=RSUDIST`?
@@ -92,6 +91,25 @@ In this regard, please pay particular attention to the part of the
 > THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 > EXPRESS OR IMPLIED
 
+## Future Development
+
+I have submitted `=RSUDIST` to be a proper Google Sheets Add-on, but
+I'm still working through what's required for that.
+
+In the mean time, you can surely use/consume `=RSUDIST` as described
+above.
+
+If you are looking to fix bugs or add features so that they are merged
+back in here, I suspect you should open an issue to describe what you
+want.
+
+I have a test suite for `=RSUDIST` that lives inside a Google Sheet--
+and I would add a link to that if anyone wants to collaborate.
+
+I will also consider converting this over to use [Clasp], but I'll
+wait until I get through / give up on this becoming a proper Google
+Sheet Add-on, first.
+
 ## In Closing
 
 I think `=RSUDIST` can be useful and I'd ask that you please [create an
@@ -101,4 +119,5 @@ issue] if you see a problem.
 [Google Sheets]: https://www.google.com/sheets/about/
 [Custom Function]: https://developers.google.com/apps-script/guides/sheets/functions
 [LICENSE]: ./LICENSE
+[Clasp]: https://github.com/google/clasp
 [create an issue]: https://github.com/jedcn/rsudist/issues/new

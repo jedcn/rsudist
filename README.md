@@ -44,7 +44,7 @@ not want anyone to be in that position if I can help them avoid it.
 5. Navigate back to your Google Sheet
 6. You should now be able to invoke `=RSUDIST()`.
 
-## How to use `=RSUDIST` once it is available to you?
+## How do you use `=RSUDIST` once it is available in a Google Sheet?
 
 It can be invoked with arguments directly: `=RSUDIST(16, "1/1/2020")`.
 

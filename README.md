@@ -15,7 +15,7 @@ equity.
 
 `=RSUDIST` makes reasoning about equity easier.
 
-You can *only benefit* from better understanding any equity that has
+You can **only benefit** from better understanding any equity that has
 been granted to you.
 
 And Google Sheets is a good mechanism for exploring how vesting equity
@@ -23,48 +23,47 @@ and changing stock prices can impact you.
 
 ## Why would I create/share `=RSUDIST`?
 
-When thinking through my own equity situation, I have wished for
-something that is illustrative of possible outcomes in the way that
-`=RSUDIST` is.
+I have always wanted something that would be illustrative of possible
+outcomes in the way that `=RSUDIST` is.
 
 It was helpful to me, and whether you have been dealing with equity
 for years or are just getting started, I think it can be helpful to
-you.
+you, too.
 
 Lastly, I have known people that have *entirely disregarded*
 compensation from equity because they did not understand it, and I do
-not want anyone to make that mistake if I can help it.
+not want anyone to be in that position if I can help them avoid it.
 
 ## How do you "get" `=RSUDIST`?
 
-1. Create a new Google Sheet
+1. [Create a new Google Sheet]
 2. Navigate to Tools > Script Editor (a new window will open)
 3. Replace the default Script Editor content of `function myFunction {
    }` with the contents of [this file][Code.js].
 4. Save your changes in the Script Editor
 5. Navigate back to your Google Sheet
-6. You should now be able to invoke `=RSUDIST()`. See below for three
-   ways to verify that it is working as expected.
+6. You should now be able to invoke `=RSUDIST()`.
 
-## How to use `=RSUDIST`?
+## How do you use `=RSUDIST` once it is available in a Google Sheet?
 
 It can be invoked with arguments directly: `=RSUDIST(16, "1/1/2020")`.
 
 <img alt="RSUDIST with values" src="images/rsudist-invocation-by-value.jpg" width="250" />
 
-Alternatively, you could put `16` in a cell side-by-side `1/1/2020`
-and you can pass in references to those cells: `=RSUDIST(A1:B1)`.
+Alternatively, you could put `16` and `1/1/2020` in two cells right
+next to each other, and you can pass in a reference to those cells:
+`=RSUDIST(A1:B1)`.
 
 <img alt="RSUDIST with references" src="images/rsudist-invocation-by-reference.jpg" width="400" />
 
-If you are in the fortunate situation where you have two grants, you
-could describe each grant like above and then pass in a reference to
-that range: `=RSUDIST(A1:B2)`.
+Lastly, if you are in the fortunate situation where you have two
+grants, you could describe each grant as above and then pass in a
+reference to that range: `=RSUDIST(A1:B2)`.
 
 <img alt="RSUDIST with two grants" src="images/rsudist-two-grants.jpg" width="400" />
 
-In this situation, `=RSUDIST` will merge the results, and if vest
-dates overlap the RSUs vested will be added together.
+In this situation, `=RSUDIST` will merge the results together, and if
+dates overlap the RSUs vested will be combined.
 
 ## Assumptions, Limitations, and a Warning
 
@@ -109,14 +108,19 @@ Sheet Add-on, first.
 
 ## In Closing
 
-I think `=RSUDIST` can be useful and I'd ask that you please [create an
-issue] if you see a problem.
+I hope that `=RSUDIST` can be useful to you, and if you see a problem
+or shortcoming I invite you to [create an issue].
 
-Be informed. Be well. Happy New Year.
+Be informed.
+
+Be well.
+
+Happy New Year.
 
 [Code.js]: src/Code.js
 [Google Sheets]: https://www.google.com/sheets/about/
 [Custom Function]: https://developers.google.com/apps-script/guides/sheets/functions
+[Create a new Google Sheet]: https://sheets.new/
 [LICENSE]: ./LICENSE
 [Clasp]: https://github.com/google/clasp
 [create an issue]: https://github.com/jedcn/rsudist/issues/new
